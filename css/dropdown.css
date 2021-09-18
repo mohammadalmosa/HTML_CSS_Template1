@@ -1,0 +1,26 @@
+.dropdown {
+  position: relative;
+}
+.dropdown-menu {
+  position: absolute;
+  background: var(--mainColor);
+  width: 150px;
+  text-align: center;
+  left: -50%;
+  top: 70%;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s, visibility 0.5s;
+}
+.dropdown-menu {
+  position: absolute;
+}
+.dropdown-menu a {
+  color: var(--whiteColor);
+  display: block;
+  padding: 10px;
+}
+.dropdown:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+}

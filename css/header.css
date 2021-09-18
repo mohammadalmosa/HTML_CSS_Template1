@@ -1,0 +1,106 @@
+.section-header {
+  text-align: center;
+
+}
+.section-header .section-title {
+  font-size: 35px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+.section-header .line {
+  display: block;
+  height: 5px;
+  width: 60px;
+  margin: 0 auto 70px auto;
+  background-color: var(--mainColor) ;
+}
+.ltr-effect,
+.tb-effect {
+  position: relative;
+}
+.ltr-effect:after,
+.tb-effect:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #333;
+  z-index: -1;
+}
+.ltr-effect:hover:after {
+  width: 100%;
+}
+.ltr-effect:after {
+  width: 0%;
+  transition: width 0.5s;
+}
+
+.tb-effect:after {
+  height: 0;
+  transition: height 0.5s;
+}
+.tb-effect:hover:after {
+  height: 100%;
+}
+
+/* 3- sectcion styles
+
+/*3.0 Header section */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+.header .logo {
+  width: 40%;
+
+  float: left;
+}
+.header .logo img {
+  width: 20%;
+  margin: top 15px;
+}
+
+.header-content {
+  /*overflow: hidden;  to solve float problem */
+}
+
+.header .nav {
+  width: 60%;
+  text-align: right;
+  list-style: none;
+  float: left;
+}
+.header .nav > li {
+  display: inline-block;
+  width: 75px;
+  text-align: right;
+}
+.header .nav > li > a {
+  color: white;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  padding: 20px 10px;
+}
+.header .nav > li > a.active:after,
+.header .nav > li > a:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: var(--mainColor);
+  margin-top: 2px;
+  transition: width 0.5s;
+}
+.header .nav > li > a.active:after {
+  width: 100%;
+}
+.header .nav > li > a:after {
+  width: 0%;
+}
+.header .nav > li > a:hover:after {
+  width: 100%;
+}

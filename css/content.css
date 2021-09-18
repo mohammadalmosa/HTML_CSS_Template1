@@ -1,0 +1,111 @@
+
+/* contact section */
+.informion-item {
+  overflow: hidden;
+}
+.phone {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  text-align: center;
+}
+
+.phone i {
+  color: var(--mainColor);
+}
+.phone .phone-item {
+  color: var(--grayColor);
+}
+.email {
+  float: left;
+  width: 30%;
+  text-align: center;
+  margin: 0 5%;
+}
+
+.email i {
+  color: var(--mainColor);
+}
+.email-font,
+.phone-font,
+.map-font {
+  margin: 20px 0;
+}
+
+.email .email-item {
+  color: var(--grayColor);
+}
+.address {
+  width: 30%;
+  float: left;
+  text-align: center;
+}
+.address i {
+  color: var(--mainColor);
+}
+.address .address-item {
+  color: var(--grayColor);
+}
+form {
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+}
+form input {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #414040;
+}
+form .w50 {
+  width: 45%;
+}
+form #first_input {
+  margin-right: 8%;
+}
+form input[type="submit"] {
+  background-color: var(--mainColor);
+  color: var(--whiteColor);
+  width: 30%;
+  height: 15%;
+  border: none;
+  
+}
+
+/*contact siction*/
+
+.footer {
+  background: #1C1D21;
+  text-align: center;
+  padding: 60px 0;
+}
+.footer-links {
+  list-style: none;
+  margin: 20px 0;
+}
+
+.footer-links li {
+  display: inline-block;
+}
+
+.footer-links li a {
+  display: block
+;
+width: 50px;
+height: 50px;
+background: var(--mainColor);
+color: var(--whiteColor);
+margin:  0 5px;
+border-radius: 50%;
+}
+
+.footer-links li a i {
+  line-height: 50px;
+
+}
+.footer .copyright {
+  color:  var(--grayColor);
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 25px;
+}
